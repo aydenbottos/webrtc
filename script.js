@@ -5,14 +5,10 @@ if (!location.hash) {
 const roomHash = location.hash.substring(1);
 
 // TODO: Replace with your own channel ID
-const drone = new ScaleDrone('yiS12Ts5RdNhebyM');
+const drone = new ScaleDrone('558QL8Y1xngrAZCb');
 // Room name needs to be prefixed with 'observable-'
 const roomName = 'observable-' + roomHash;
-const configuration = {
-  iceServers: [{
-    urls: 'stun:stun.l.google.com:19302'
-  }]
-};
+const configuration = { iceServers: [ { urls: ["turn:numb.viagenie.ca:3478","stun:numb.viagenie.ca:3478"], username: "aydenbottos12@gmail.com", credential: "ayden2006" } ] };
 let room;
 let pc;
 
